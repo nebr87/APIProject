@@ -1,0 +1,24 @@
+package com.API.entities;
+
+import javax.persistence.OneToMany;
+import java.util.List;
+
+/**
+ * Created by myworklaptopmyworklaptop on 12/27/16.
+ */
+public class Manager extends Employee {
+
+    @OneToMany
+    private List<Employee> employees;
+
+    public Manager() {
+    }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
+    }
+}
