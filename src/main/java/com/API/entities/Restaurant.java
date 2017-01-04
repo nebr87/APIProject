@@ -20,6 +20,7 @@ public class Restaurant extends BaseEntity{
     private District district;
 
     public Restaurant() {
+        super();
     }
 
     public int getStartHour() {

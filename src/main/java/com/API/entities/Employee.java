@@ -1,16 +1,19 @@
 package com.API.entities;
 
+import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 
 /**
  * Created by myworklaptopmyworklaptop on 12/27/16.
  */
+@Entity
 public class Employee {
     private String name;
     @OneToOne
     private Address address;
 
     public Employee() {
+        super();
     }
 
     public String getName() {

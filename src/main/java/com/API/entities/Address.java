@@ -1,8 +1,13 @@
 package com.API.entities;
 
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+import javax.persistence.Entity;
+
 /**
  * Created by myworklaptopmyworklaptop on 12/27/16.
  */
+@Entity
 public class Address {
     String addressLine;
     String city;
@@ -10,6 +15,14 @@ public class Address {
     int zipCode;
 
     public Address() {
+        super();
+    }
+
+    public Address(String addressLine, String city, String state, int zipCode) {
+        this.addressLine = addressLine;
+        this.city = city;
+        this.state = state;
+        this.zipCode = zipCode;
     }
 
     public String getAddressLine() {
