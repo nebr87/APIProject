@@ -7,7 +7,7 @@ import javax.persistence.OneToOne;
  * Created by myworklaptopmyworklaptop on 12/27/16.
  */
 @Entity
-public class Employee {
+public class Employee extends BaseEntity{
     private String name;
     @OneToOne
     private Address address;

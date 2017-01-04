@@ -8,7 +8,7 @@ import javax.persistence.Entity;
  * Created by myworklaptopmyworklaptop on 12/27/16.
  */
 @Entity
-public class Address {
+public class Address extends BaseEntity{
     String addressLine;
     String city;
     String state;
